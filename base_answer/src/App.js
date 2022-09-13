@@ -1,8 +1,12 @@
+import CharSheet from './pages/CharSheet';
+
 import './App.css';
 
 function App() {
   return (
-    <h1>Hello World!!! - BS</h1> 
+    <main>
+      <CharSheet />
+    </main>
   );
 }
 
