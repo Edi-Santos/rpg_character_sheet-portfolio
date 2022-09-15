@@ -1,7 +1,9 @@
+import Name from "./FormComponents/Name";
+
 function Form() {
   return (
     <form>
-      <h1>Formulário Aqui</h1>
+      <Name />
     </form>
   )
 }
