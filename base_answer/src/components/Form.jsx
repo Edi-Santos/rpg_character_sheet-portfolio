@@ -12,6 +12,7 @@ function Form() {
     const value = target.type !== 'checkbox' ? target.value : target.checkbox;
 
     setCharInfo((prevState) => ({
+      ...prevState,
       [name]: value,
     }));
   };
