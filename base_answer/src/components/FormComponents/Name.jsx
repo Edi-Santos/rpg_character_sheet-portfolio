@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Name({ name, onChange }) {
   return (
     <label forHtml="name">
@@ -13,5 +15,10 @@ function Name({ name, onChange }) {
     </label>
   );
 }
+
+Name.propTypes = {
+  name: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
 
 export default Name;
