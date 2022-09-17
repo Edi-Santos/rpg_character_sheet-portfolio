@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Name from "./FormComponents/Name";
+import Level from "./FormComponents/Level";
 
 function Form() {
   const [charInfo, setCharInfo] = useState({
@@ -18,11 +19,12 @@ function Form() {
     }));
   };
 
-  const { name } = charInfo;
+  const { name, level } = charInfo;
 
   return (
     <form>
       <Name name={ name } onChange={ handleChange } />
+      <Level level={ level } onChange={ handleChange } />
     </form>
   )
 }
