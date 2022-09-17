@@ -11,7 +11,7 @@ function Form() {
 
   const handleChange = ({ target }) => {
     const { name } = target;
-    const value = target.type !== 'checkbox' ? target.value : target.checkbox;
+    const value = target.type !== 'checkbox' ? target.value : target.checked;
 
     setCharInfo((prevState) => ({
       ...prevState,
