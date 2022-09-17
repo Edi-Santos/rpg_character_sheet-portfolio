@@ -5,6 +5,7 @@ import Name from "./FormComponents/Name";
 function Form() {
   const [charInfo, setCharInfo] = useState({
     name: '',
+    level: 1,
   });
 
   const handleChange = ({ target }) => {
