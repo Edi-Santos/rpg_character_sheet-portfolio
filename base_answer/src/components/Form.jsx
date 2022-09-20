@@ -2,11 +2,13 @@ import { useState } from "react";
 
 import Name from "./FormComponents/Name";
 import Level from "./FormComponents/Level";
+import Class from "./FormComponents/Class";
 
 function Form() {
   const [charInfo, setCharInfo] = useState({
     name: '',
     level: 1,
+    charClass: '',
   });
 
   const handleChange = ({ target }) => {
@@ -19,12 +21,13 @@ function Form() {
     }));
   };
 
-  const { name, level } = charInfo;
+  const { name, level, charClass } = charInfo;
 
   return (
     <form>
       <Name name={ name } onChange={ handleChange } />
       <Level level={ level } onChange={ handleChange } />
+      <Class charClass={ charClass } onChange={ handleChange} />
     </form>
   )
 }
