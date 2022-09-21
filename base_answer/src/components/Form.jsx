@@ -11,6 +11,15 @@ function Form() {
     charClass: '',
   });
 
+  const [attrubutes, setAttributes] = useState({
+    str: 0,
+    rec: 0,
+    dex: 0,
+    luc: 0,
+    wis: 0,
+    int: 0,
+  })
+
   const handleChange = ({ target }) => {
     const { name } = target;
     const value = target.type !== 'checkbox' ? target.value : target.checked;
