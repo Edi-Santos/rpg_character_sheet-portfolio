@@ -30,6 +30,16 @@ function Form() {
     }));
   };
 
+  const handleChangeAtt = ({ target }) => {
+    const { name } = target;
+    const value = target.type !== 'checkbox' ? target.value : target.checked;
+
+    setAttributes((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  }
+
   const { name, level, charClass } = charInfo;
 
   return (
