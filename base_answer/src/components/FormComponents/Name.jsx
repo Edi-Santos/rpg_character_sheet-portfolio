@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function Name({ name, onChange }) {
   return (
-    <label forHtml="name">
+    <label htmlFor="name">
       <p>Nome:</p>
       <input
         type="text"
