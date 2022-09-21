@@ -20,7 +20,7 @@ function Form() {
     int: 0,
   });
 
-  const handleChange = ({ target }) => {
+  const handleChangeInfo = ({ target }) => {
     const { name } = target;
     const value = target.type !== 'checkbox' ? target.value : target.checked;
 
@@ -34,9 +34,9 @@ function Form() {
 
   return (
     <form>
-      <Name name={ name } onChange={ handleChange } />
-      <Level level={ level } onChange={ handleChange } />
-      <Class charClass={ charClass } onChange={ handleChange} />
+      <Name name={ name } onChange={ handleChangeInfo } />
+      <Level level={ level } onChange={ handleChangeInfo } />
+      <Class charClass={ charClass } onChange={ handleChangeInfo} />
     </form>
   );
 }
