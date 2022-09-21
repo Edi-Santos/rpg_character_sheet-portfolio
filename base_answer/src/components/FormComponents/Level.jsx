@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Level({ level, onChange }) {
   return (
     <label htmlFor="level">
@@ -13,5 +15,10 @@ function Level({ level, onChange }) {
     </label>
   );
 }
+
+Level.propTypes = {
+  level: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
 
 export default Level;
