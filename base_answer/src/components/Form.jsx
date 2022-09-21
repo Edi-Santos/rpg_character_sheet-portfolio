@@ -38,7 +38,7 @@ function Form() {
       <Level level={ level } onChange={ handleChange } />
       <Class charClass={ charClass } onChange={ handleChange} />
     </form>
-  )
+  );
 }
 
 export default Form;
