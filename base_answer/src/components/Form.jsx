@@ -18,7 +18,7 @@ function Form() {
     luc: 0,
     wis: 0,
     int: 0,
-  })
+  });
 
   const handleChange = ({ target }) => {
     const { name } = target;
