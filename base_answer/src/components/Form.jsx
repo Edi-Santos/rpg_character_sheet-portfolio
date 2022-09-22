@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import Name from "./FormComponents/Name";
-import Level from "./FormComponents/Level";
-import Class from "./FormComponents/Class";
+import Name from "./FormComponents/charInfos/Name";
+import Level from "./FormComponents/charInfos/Level";
+import Class from "./FormComponents/charInfos/Class";
 import Str from "./FormComponents/attributes/Str";
 
 function Form() {
