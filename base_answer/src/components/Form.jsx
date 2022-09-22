@@ -3,6 +3,7 @@ import { useState } from "react";
 import Name from "./FormComponents/Name";
 import Level from "./FormComponents/Level";
 import Class from "./FormComponents/Class";
+import Str from "./FormComponents/attributes/Str";
 
 function Form() {
   const [charInfo, setCharInfo] = useState({
@@ -41,12 +42,15 @@ function Form() {
   }
 
   const { name, level, charClass } = charInfo;
+  const { str } = attrubutes;
 
   return (
     <form>
       <Name name={ name } onChange={ handleChangeInfo } />
       <Level level={ level } onChange={ handleChangeInfo } />
       <Class charClass={ charClass } onChange={ handleChangeInfo} />
+
+      <Str str={ str } onChange={ handleChangeAtt } />
     </form>
   );
 }
