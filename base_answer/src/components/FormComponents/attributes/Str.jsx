@@ -16,7 +16,7 @@ function Str({ str, onChange }) {
 }
 
 Str.propTypes = {
-  str: PropTypes.number.isRequired,
+  str: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
 
