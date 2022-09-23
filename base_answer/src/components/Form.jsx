@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import Name from "./FormComponents/charInfos/Name";
-import Level from "./FormComponents/charInfos/Level";
-import Class from "./FormComponents/charInfos/Class";
-import Str from "./FormComponents/attributes/Str";
-import Rec from "./FormComponents/attributes/Rec";
-import Dex from "./FormComponents/attributes/Dex";
+import Name from './FormComponents/charInfos/Name';
+import Level from './FormComponents/charInfos/Level';
+import Class from './FormComponents/charInfos/Class';
+import Str from './FormComponents/attributes/Str';
+import Rec from './FormComponents/attributes/Rec';
+import Dex from './FormComponents/attributes/Dex';
 
 function Form() {
   const [charInfo, setCharInfo] = useState({
