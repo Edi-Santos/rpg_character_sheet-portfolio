@@ -50,7 +50,7 @@ function Form() {
     <form>
       <Name name={ name } onChange={ handleChangeInfo } />
       <Level level={ level } onChange={ handleChangeInfo } />
-      <Class charClass={ charClass } onChange={ handleChangeInfo} />
+      <Class charClass={ charClass } onChange={ handleChangeInfo } />
 
       <Str str={ str } onChange={ handleChangeAtt } />
       <Rec rec={ rec } onChange={ handleChangeAtt } />
