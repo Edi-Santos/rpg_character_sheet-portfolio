@@ -40,7 +40,7 @@ function Form() {
       ...prevState,
       [name]: value,
     }));
-  }
+  };
 
   const { name, level, charClass } = charInfo;
   const { str, rec } = attrubutes;
