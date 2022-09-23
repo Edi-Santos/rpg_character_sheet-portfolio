@@ -7,7 +7,7 @@ function Class({ charClass, onChange }) {
       <input
         type="text"
         id="class"
-        name="class"
+        name="charClass"
         value={ charClass }
         onChange={ onChange }
         placeholder="Classe"
