@@ -6,6 +6,7 @@ function Wis({ wis, onChange }) {
       <p>WIS</p>
       <input
         type="number"
+        min="1"
         id="wis"
         name="wis"
         value={ wis }
