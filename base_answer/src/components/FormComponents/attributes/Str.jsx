@@ -6,6 +6,7 @@ function Str({ str, onChange }) {
       <p>STR</p>
       <input
         type="number"
+        min="1"
         id="str"
         name="str"
         value={ str }
