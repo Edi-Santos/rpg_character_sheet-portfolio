@@ -52,6 +52,15 @@ function Form() {
     }));
   };
 
+  const handleChangeEqp = ({ target }) => {
+    const { name, value } = target;
+
+    setEquipment((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
   const { name, level, charClass } = charInfo;
   const { str, rec, dex, luc, wis, int } = attrubutes;
 
