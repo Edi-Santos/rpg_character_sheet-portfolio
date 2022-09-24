@@ -8,6 +8,7 @@ import Rec from './FormComponents/attributes/Rec';
 import Dex from './FormComponents/attributes/Dex';
 import Luc from './FormComponents/attributes/Luc';
 import Wis from './FormComponents/attributes/Wis';
+import Int from './FormComponents/attributes/Int';
 
 function Form() {
   const [charInfo, setCharInfo] = useState({
@@ -46,7 +47,7 @@ function Form() {
   };
 
   const { name, level, charClass } = charInfo;
-  const { str, rec, dex, luc, wis } = attrubutes;
+  const { str, rec, dex, luc, wis, int } = attrubutes;
 
   return (
     <form>
@@ -59,6 +60,7 @@ function Form() {
       <Dex dex={ dex } onChange={ handleChangeAtt } />
       <Luc luc={ luc } onChange={ handleChangeAtt } />
       <Wis wis={ wis } onChange={ handleChangeAtt } />
+      <Int int={ int } onChange={ handleChangeAtt } />
     </form>
   );
 }
