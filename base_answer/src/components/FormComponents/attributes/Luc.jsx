@@ -6,6 +6,7 @@ function Luc({ luc, onChange }) {
       <p>LUC</p>
       <input
         type="text"
+        min="1"
         id="luc"
         name="luc"
         value={ luc }
