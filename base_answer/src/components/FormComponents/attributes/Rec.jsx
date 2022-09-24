@@ -6,6 +6,7 @@ function Rec({ rec, onChange }) {
       <p>REC</p>
       <input
         type="number"
+        min="1"
         id="rec"
         name="rec"
         value={ rec }
