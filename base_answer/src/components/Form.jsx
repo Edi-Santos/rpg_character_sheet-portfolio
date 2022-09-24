@@ -26,6 +26,12 @@ function Form() {
     int: '1',
   });
 
+  const [equipment, setEquipment] = useState({
+    weapon: '',
+    armor: '',
+    bag: '',
+  });
+
   const handleChangeInfo = ({ target }) => {
     const { name } = target;
     const value = target.type !== 'checkbox' ? target.value : target.checked;
