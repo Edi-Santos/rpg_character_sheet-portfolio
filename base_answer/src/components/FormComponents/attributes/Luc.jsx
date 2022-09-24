@@ -5,7 +5,7 @@ function Luc({ luc, onChange }) {
     <label htmlFor="luc">
       <p>LUC</p>
       <input
-        type="text"
+        type="number"
         min="1"
         id="luc"
         name="luc"
