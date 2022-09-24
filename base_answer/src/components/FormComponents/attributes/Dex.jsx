@@ -6,6 +6,7 @@ function Dex({ dex, onChange }) {
       <p>DEX</p>
       <input
         type="number"
+        min="1"
         id="dex"
         name="dex"
         value={ dex }
