@@ -6,6 +6,7 @@ function Int({ int, onChange }) {
       <p>INT</p>
       <input
         type="number"
+        min="1"
         id="int"
         name="int"
         value={ int }
