@@ -10,6 +10,7 @@ import Luc from './FormComponents/attributes/Luc';
 import Wis from './FormComponents/attributes/Wis';
 import Int from './FormComponents/attributes/Int';
 import Weapon from './FormComponents/equipment/Weapon';
+import Armor from './FormComponents/equipment/Armor';
 import Bag from './FormComponents/equipment/Bag';
 
 function Form() {
@@ -65,7 +66,7 @@ function Form() {
 
   const { name, level, charClass } = charInfo;
   const { str, rec, dex, luc, wis, int } = attrubutes;
-  const { weapon, bag } = equipment;
+  const { weapon, armor, bag } = equipment;
 
   return (
     <form>
@@ -81,6 +82,7 @@ function Form() {
       <Int int={ int } onChange={ handleChangeAtt } />
 
       <Weapon weapon={ weapon } onChange={ handleChangeEqp } />
+      <Armor armor={ armor } onChange={ handleChangeEqp } />
       <Bag bag={ bag } onChange={ handleChangeEqp } />
     </form>
   );
