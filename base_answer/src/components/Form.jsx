@@ -12,6 +12,7 @@ import Int from './FormComponents/attributes/Int';
 import Weapon from './FormComponents/equipment/Weapon';
 import Armor from './FormComponents/equipment/Armor';
 import Bag from './FormComponents/equipment/Bag';
+import FirstSkill from './FormComponents/skills/FirstSkill';
 
 function Form() {
   const [charInfo, setCharInfo] = useState({
@@ -21,7 +22,7 @@ function Form() {
   });
 
   const [skills, setSkills] = useState({
-    'first-skill': '',
+    firstSkill: '',
     'second-skill': '',
     'third-skill': '',
     'fourth-skill': '',
@@ -82,6 +83,7 @@ function Form() {
   };
 
   const { name, level, charClass } = charInfo;
+  const { firstSkill } = skills;
   const { str, rec, dex, luc, wis, int } = attrubutes;
   const { weapon, armor, bag } = equipment;
 
@@ -91,6 +93,10 @@ function Form() {
         <Name name={ name } onChange={ handleChangeInfo } />
         <Level level={ level } onChange={ handleChangeInfo } />
         <Class charClass={ charClass } onChange={ handleChangeInfo } />
+      </section>
+
+      <section>
+        <FirstSkill skill={ firstSkill } onChange={ handleChangeSkill } />
       </section>
 
       <section>
