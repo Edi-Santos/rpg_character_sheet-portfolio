@@ -70,20 +70,26 @@ function Form() {
 
   return (
     <form>
-      <Name name={ name } onChange={ handleChangeInfo } />
-      <Level level={ level } onChange={ handleChangeInfo } />
-      <Class charClass={ charClass } onChange={ handleChangeInfo } />
+      <section>
+        <Name name={ name } onChange={ handleChangeInfo } />
+        <Level level={ level } onChange={ handleChangeInfo } />
+        <Class charClass={ charClass } onChange={ handleChangeInfo } />
+      </section>
 
-      <Str str={ str } onChange={ handleChangeAtt } />
-      <Rec rec={ rec } onChange={ handleChangeAtt } />
-      <Dex dex={ dex } onChange={ handleChangeAtt } />
-      <Luc luc={ luc } onChange={ handleChangeAtt } />
-      <Wis wis={ wis } onChange={ handleChangeAtt } />
-      <Int int={ int } onChange={ handleChangeAtt } />
+      <section>
+        <Str str={ str } onChange={ handleChangeAtt } />
+        <Rec rec={ rec } onChange={ handleChangeAtt } />
+        <Dex dex={ dex } onChange={ handleChangeAtt } />
+        <Luc luc={ luc } onChange={ handleChangeAtt } />
+        <Wis wis={ wis } onChange={ handleChangeAtt } />
+        <Int int={ int } onChange={ handleChangeAtt } />
+      </section>
 
-      <Weapon weapon={ weapon } onChange={ handleChangeEqp } />
-      <Armor armor={ armor } onChange={ handleChangeEqp } />
-      <Bag bag={ bag } onChange={ handleChangeEqp } />
+      <section>
+        <Weapon weapon={ weapon } onChange={ handleChangeEqp } />
+        <Armor armor={ armor } onChange={ handleChangeEqp } />
+        <Bag bag={ bag } onChange={ handleChangeEqp } />
+      </section>
     </form>
   );
 }
