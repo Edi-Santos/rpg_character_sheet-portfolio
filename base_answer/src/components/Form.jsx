@@ -23,10 +23,10 @@ function Form() {
 
   const [skills, setSkills] = useState({
     firstSkill: '',
-    'second-skill': '',
-    'third-skill': '',
-    'fourth-skill': '',
-    'fifth-skill': '',
+    secondSkill: '',
+    thirdSkill: '',
+    fourthSkill: '',
+    fifthSkill: '',
   });
 
   const [attrubutes, setAttributes] = useState({
