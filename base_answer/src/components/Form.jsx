@@ -20,6 +20,14 @@ function Form() {
     charClass: '',
   });
 
+  const [skills, setSkills] = useState({
+    'first-skill': '',
+    'second-skill': '',
+    'third-skill': '',
+    'fourth-skill': '',
+    'fifth-skill': '',
+  });
+
   const [attrubutes, setAttributes] = useState({
     str: '1',
     rec: '1',
@@ -40,6 +48,15 @@ function Form() {
     const value = target.type !== 'checkbox' ? target.value : target.checked;
 
     setCharInfo((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleChangeSkill = ({ target }) => {
+    const { name, value } = target;
+
+    setSkills((prevState) => ({
       ...prevState,
       [name]: value,
     }));
