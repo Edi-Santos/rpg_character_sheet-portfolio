@@ -10,7 +10,7 @@ function ThirdSkill({ skill, onChange }) {
         name="thirdSkill"
         value={ skill }
         onChange={ onChange }
-        placeholder="Segunda habilidade"
+        placeholder="Terceira habilidade"
       />
     </label>
   );
