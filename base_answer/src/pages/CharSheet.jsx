@@ -1,9 +1,10 @@
 import Form from '../components/Form';
+import Header from '../components/header/Header';
 
 function CharSheet() {
   return (
     <>
-      <h1>Ficha - RPG</h1>
+      <Header />
       <Form />
     </>
   );
