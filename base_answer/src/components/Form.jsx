@@ -93,13 +93,13 @@ function Form() {
 
   return (
     <form>
-      <section>
+      <section className="charInfos">
         <Name name={ name } onChange={ handleChangeInfo } />
         <Level level={ level } onChange={ handleChangeInfo } />
         <Class charClass={ charClass } onChange={ handleChangeInfo } />
       </section>
 
-      <section>
+      <section className="skills">
         <FirstSkill skill={ firstSkill } onChange={ handleChangeSkill } />
         <SecondSkill skill={ secondSkill } onChange={ handleChangeSkill } />
         <ThirdSkill skill={ thirdSkill } onChange={ handleChangeSkill } />
@@ -107,7 +107,7 @@ function Form() {
         <FifthSkill skill={ fifthSkill } onChange={ handleChangeSkill } />
       </section>
 
-      <section>
+      <section className="attributes">
         <Str str={ str } onChange={ handleChangeAtt } />
         <Rec rec={ rec } onChange={ handleChangeAtt } />
         <Dex dex={ dex } onChange={ handleChangeAtt } />
@@ -116,7 +116,7 @@ function Form() {
         <Int int={ int } onChange={ handleChangeAtt } />
       </section>
 
-      <section>
+      <section className="equip">
         <Weapon weapon={ weapon } onChange={ handleChangeEqp } />
         <Armor armor={ armor } onChange={ handleChangeEqp } />
         <Bag bag={ bag } onChange={ handleChangeEqp } />
